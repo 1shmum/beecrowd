@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main ()
+{
+    double a, b, c, pi, a_tri, a_rad, a_tra, a_sqr, a_rec;
+    scanf("%lf %lf %lf",&a,&b,&c);
+    pi=3.14159;
+    a_tri = ((double)1)/2*a*c;
+    a_rad = pi*c*c;
+    a_tra = ((double)(a+b))/2*c;
+    a_sqr = b*b;
+    a_rec = a*b;
+    printf("TRIANGULO: %.3lf\n",a_tri);
+    printf("CIRCULO: %.3lf\n",a_rad);
+    printf("TRAPEZIO: %.3lf\n",a_tra);
+    printf("QUADRADO: %.3lf\n",a_sqr);
+    printf("RETANGULO: %.3lf\n",a_rec);
+    return 0;
+}
