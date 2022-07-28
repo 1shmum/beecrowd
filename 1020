@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main()
+{
+ int time,yr,temp,mon,day;
+ scanf("%d",&time);
+ yr = time/365;
+ temp = time%365;
+ mon = temp/30;
+ day = temp%30;
+ printf("%d ano(s)\n%d mes(es)\n%d dia(s)\n",yr,mon,day);
+ 
+ return 0;
+}
