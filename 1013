@@ -1,0 +1,12 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main ()
+{
+    int a,b,c,temp,major;
+    scanf("%d %d %d",&a,&b,&c);
+    temp=(a+b+abs(a-b))/2;
+    major=(temp+c+abs(temp-c))/2;
+    printf("%d eh o maior\n",major);
+
+    return 0;
+}
