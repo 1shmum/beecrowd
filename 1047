@@ -1,0 +1,32 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b,c,d,x,y,x1;
+    cin>>a>>c>>b>>d;
+    x1=(b-a);
+    x=((24+b)-a);
+    if(c>d)
+    {
+        y=((60+d)-c);
+        if(a==b)
+            cout<<"O JOGO DUROU 24 HORA(S) E "<<y<<" MINUTO(S)"<<endl;
+        else if(a<b)
+            cout<<"O JOGO DUROU "<<x1-1<<" HORA(S) E "<<y<<" MINUTO(S)"<<endl;
+        else if(a>b)
+            cout<<"O JOGO DUROU "<<x-1<<" HORA(S) E "<<y<<" MINUTO(S)"<<endl;
+    }
+    else
+    {
+        if(c<d)
+            y=(d-c);
+        else y=0;
+        if(a==b)
+            cout<<"O JOGO DUROU 24 HORA(S) E "<<y<<" MINUTO(S)"<<endl;
+        else if(a<b)
+            cout<<"O JOGO DUROU "<<x1<<" HORA(S) E "<<y<<" MINUTO(S)"<<endl;
+        else if(a>b)
+            cout<<"O JOGO DUROU "<<x<<" HORA(S) E "<<y<<" MINUTO(S)"<<endl;
+    }
+    return 0;
+}
