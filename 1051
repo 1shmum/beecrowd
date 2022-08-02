@@ -1,0 +1,32 @@
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{
+    double sal,tax,n;
+    cin>>sal;
+    cout<<fixed<<setprecision(2);
+    if(sal<=2000.00)
+        cout<<"Isento"<<endl;
+    else if(sal>2000.00 && sal<=3000.00)
+    {
+        n=sal-2000.00;
+        tax=(8*n)/100;
+        cout<<"R$ "<<tax<<endl;
+    }
+    else if(sal>3000.00 && sal<=4500.00)
+    {
+        n=sal-3000.00;
+        tax=((18*n)/100);
+        tax=((8*1000)/100)+tax;
+        cout<<"R$ "<<tax<<endl;
+    }
+    else if(sal>4500)
+    {
+        n=sal-4500.00;
+        tax=(28*n)/100;
+        tax=((8*1000)/100)+((18*1500)/100)+tax;
+        cout<<"R$ "<<tax<<endl;
+    }
+    return 0;
+}
