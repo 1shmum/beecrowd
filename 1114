@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int pass=2002,n,i;
+    for(i=1; i<=100; i++)
+    {
+        cin>>n;
+        if(n==pass)
+        {
+            cout<<"Acesso Permitido"<<endl;
+            break;
+        }
+        else
+            cout<<"Senha Invalida"<<endl;
+
+    }
+    return 0;
+}
