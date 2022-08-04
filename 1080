@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,i,pos=0,mx=-1;
+    for(i=1;i<=100;i++)
+    {
+       cin>>n;
+       if(n>mx)
+       {
+        mx = n;
+        pos=i;
+       }
+
+    }
+    cout<<mx<<endl;
+    cout<<pos<<endl;
+    return 0;
+}
