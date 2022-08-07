@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int f1=0,f2=1,i,sum,n;
+    cin>>n;
+    for(i=1; i<=n; i++)
+    {
+        if(i==n)
+            cout<<f1;
+        else
+            cout<<f1<<" ";
+        sum=f1+f2;
+        f1=f2;
+        f2=sum;
+    }
+    cout<<endl;
+    return 0;
+}
+
