@@ -1,0 +1,24 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+   int i,e,sum,x;
+   while(1)
+   {
+       cin>>x;
+       if(x==0)
+        break;
+        i=0;
+        sum=0;
+       for(e=x;i<5;e++)
+       {
+           if(e%2==0)
+           {
+               sum+=e;
+               i++;
+           }
+       }
+       cout<<sum<<endl;
+   }
+    return 0;
+}
